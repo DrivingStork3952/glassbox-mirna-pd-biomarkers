@@ -129,7 +129,7 @@ pip install -r requirements.txt
 
 Each notebook can be run independently if its required input files already exist in `data/raw/` or `data/processed/`.
 
-##Limitations
+## Limitations
 
 - **Sample Size.** With 320 total samples and ~2400 candidate features after filtering, feature selection is inherently unstable; this was characterized explicitly via repeated holdout rather than masked by a single train/test split.
 - **Batch correction approximation.** Test-set ComBat correction uses an offset-projection approximation (rather than re-fitting ComBat on test data) to strictly prevent test-set leakage into correction parameters. This is a deliberate methodological trade-off, not an oversight.
